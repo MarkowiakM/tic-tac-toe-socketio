@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  client:
+    container_name: frontend_client
+    build:
+      context: frontend
+      dockerfile: Dockerfile
+    volumes:
+      - "./frontend/:/usr/app/"
+      - "/usr/app/node_modules"
+    ports:
+      - "${FRONTEND_PORT}:5173"
+    env_file:
+      - .env
+
+volumes:
+  backend_primary_db_volume:
+    driver: local
