@@ -1,12 +1,15 @@
-import "./index.css";
+import { FC } from "react";
+import { Outlet } from "react-router-dom";
+import { RecoilRoot } from "recoil";
 
-function App() {
-
+const App: FC = () => {
   return (
-    <div>
-      hello
+    <div className="flex flex-col items-center justify-center h-screen w-screen bg-slate-200">
+      <RecoilRoot>
+        <Outlet />
+      </RecoilRoot>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

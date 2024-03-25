@@ -9,18 +9,5 @@
   "tabWidth": 2,
   "arrowParens": "avoid",
   "trailingComma": "all",
-  "bracketSpacing": true,
-  "importOrder": [
-    "^react(.*)$",
-    "<THIRD_PARTY_MODULES>",
-    "^@/state/?(.*)$",
-    "^@/constants/?(.*)$",
-    "^@/types/?(.*)$",
-    "^@/utils/?(.*)$",
-    "^@/api/?(.*)$",
-    "^@/pages/?(.*)$",
-    "^@/components/?(.*)$",
-    "^[./]"
-  ]
-
+  "bracketSpacing": true
 }
